@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>机甲之心 | MEKA CORE</title>
+  <meta name="description" content="一个热爱机甲、科幻与技术的个人博客">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">机甲之心<span>.TECH</span></a>
+      <ul class="nav-links" id="navLinks">
+        
+        
+        
+        <li><a href="/">首页</a></li>
+        
+        
+        
+        <li><a href="/daily/">日常</a></li>
+        
+        
+        
+        <li><a href="/topics/">专题</a></li>
+        
+        
+        
+        <li><a href="/message/">留言</a></li>
+        
+        
+        
+        <li><a href="/about/">关于</a></li>
+        
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+<main class="main-content">
+  
+  <!-- 普通页面 -->
+  <section class="container">
+    <div class="page-content">
+      
+      <header class="page-header">
+        <h1 class="page-title">专题</h1>
+      </header>
+      
+      
+      <div class="page-body">
+        <h1 id="专题"><a href="#专题" class="headerlink" title="专题"></a>专题</h1><p>深入探索特定主题的系列文章。</p>
+
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">机甲之心</div>
+      <div class="footer-social">
+        
+        
+        
+      </div>
+      
+      <!-- 访问统计 -->
+      <div class="site-stats">
+        <span class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv">-</span> 次访问
+          </span>
+        </span>
+        <span class="stat-divider">|</span>
+        <span class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv">-</span> 位访客
+          </span>
+        </span>
+      </div>
+      
+      <p class="footer-text">
+        © 2024 机甲之心 MEKA CORE<br>
+        由 Hexo 驱动
+      </p>
+    </div>
+  </footer>
+  
+  <!-- 不蒜子统计 -->
+  <script async src="//busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    // Active link highlighting
+    var currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function(link) {
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active');
+      }
+    });
+
+    // Back to top button visibility
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('backToTop');
+      if (btn) {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

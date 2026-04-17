@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>机甲之心 | MEKA CORE</title>
+  <meta name="description" content="一个热爱机甲、科幻与技术的个人博客">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">机甲之心<span>.TECH</span></a>
+      <ul class="nav-links" id="navLinks">
+        
+        
+        
+        <li><a href="/">首页</a></li>
+        
+        
+        
+        <li><a href="/daily/">日常</a></li>
+        
+        
+        
+        <li><a href="/topics/">专题</a></li>
+        
+        
+        
+        <li><a href="/message/">留言</a></li>
+        
+        
+        
+        <li><a href="/about/">关于</a></li>
+        
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 文章页面 -->
+<main class="main-content">
+  <!-- 阅读进度条 -->
+  <div class="reading-progress" id="readingProgress"></div>
+  
+  <article class="post-article">
+    <!-- 炫酷头部背景 -->
+    <div class="post-hero">
+      <div class="post-hero-bg"></div>
+      <div class="post-hero-overlay"></div>
+      <div class="container">
+        <div class="post-hero-content">
+          <div class="post-category-badge">
+            
+              
+                <span class="category-tag">tech</span>
+              
+            
+          </div>
+          <h1 class="post-hero-title">Hexo博客完全指南：从零搭建机甲风格网站</h1>
+          <div class="post-hero-meta">
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>2024-01-13</span>
+            </div>
+            <div class="meta-item">
+              <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span id="readTime">预计阅读 5 分钟</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 装饰性几何图形 -->
+      <div class="hero-decoration">
+        <div class="deco-line deco-line-1"></div>
+        <div class="deco-line deco-line-2"></div>
+        <div class="deco-corner deco-corner-tl"></div>
+        <div class="deco-corner deco-corner-tr"></div>
+        <div class="deco-corner deco-corner-bl"></div>
+        <div class="deco-corner deco-corner-br"></div>
+      </div>
+    </div>
+
+    <!-- 文章内容 -->
+    <div class="container">
+      <div class="post-layout">
+        <!-- 侧边目录 -->
+        <aside class="post-toc" id="postToc">
+          <div class="toc-header">
+            <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>目录</span>
+          </div>
+          <nav class="toc-nav" id="tocNav">
+            <ul class="toc-list"></ul>
+          </nav>
+        </aside>
+
+        <!-- 文章主体 -->
+        <div class="post-body">
+          <div class="post-content-wrapper">
+            <div class="post-content" id="postContent">
+              <h1 id="Hexo博客完全指南：从零搭建机甲风格网站"><a href="#Hexo博客完全指南：从零搭建机甲风格网站" class="headerlink" title="Hexo博客完全指南：从零搭建机甲风格网站"></a>Hexo博客完全指南：从零搭建机甲风格网站</h1><p>今天给大家分享如何快速搭建一个属于自己的博客网站。我选择了Hexo框架，配合自定义的机甲风格主题，让你的博客与众不同。</p>
+<h2 id="为什么选择Hexo？"><a href="#为什么选择Hexo？" class="headerlink" title="为什么选择Hexo？"></a>为什么选择Hexo？</h2><ol>
+<li><strong>简单快速</strong> - Markdown写作，静态生成</li>
+<li><strong>主题丰富</strong> - 海量的社区主题可供选择</li>
+<li><strong>插件生态</strong> - 丰富的插件系统</li>
+<li><strong>部署便捷</strong> - 支持一键部署到GitHub Pages</li>
+</ol>
+<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="第一步：安装Node-js"><a href="#第一步：安装Node-js" class="headerlink" title="第一步：安装Node.js"></a>第一步：安装Node.js</h3><p>首先需要安装Node.js环境。建议使用LTS版本。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二步：初始化项目"><a href="#第二步：初始化项目" class="headerlink" title="第二步：初始化项目"></a>第二步：初始化项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h3 id="第三步：选择主题"><a href="#第三步：选择主题" class="headerlink" title="第三步：选择主题"></a>第三步：选择主题</h3><p>你可以使用现有的社区主题，或者像我一样自定义主题：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">themes/</span><br><span class="line">└── mecha/</span><br><span class="line">    ├── _config.yml</span><br><span class="line">    ├── layout/</span><br><span class="line">    └── source/</span><br></pre></td></tr></table></figure>
+
+<h3 id="第四步：写文章"><a href="#第四步：写文章" class="headerlink" title="第四步：写文章"></a>第四步：写文章</h3><p>使用Markdown轻松写作：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇文章</span><br><span class="line"><span class="section">date: 2024-01-01</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line"><span class="section"># 标题</span></span><br><span class="line"></span><br><span class="line">这是文章内容...</span><br></pre></td></tr></table></figure>
+
+<h3 id="第五步：本地预览"><a href="#第五步：本地预览" class="headerlink" title="第五步：本地预览"></a>第五步：本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>访问 <code>http://localhost:4000</code> 即可预览。</p>
+<h3 id="第六步：部署上线"><a href="#第六步：部署上线" class="headerlink" title="第六步：部署上线"></a>第六步：部署上线</h3><p>安装部署插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>配置 <code>_config.yml</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/yourname/yourrepo.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+
+<p>部署：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g</span><br></pre></td></tr></table></figure>
+
+<h2 id="机甲风格主题特点"><a href="#机甲风格主题特点" class="headerlink" title="机甲风格主题特点"></a>机甲风格主题特点</h2><p>我设计的主题包含以下特色：</p>
+<ul>
+<li><strong>霓虹灯效果</strong> - 绿色发光边框，机甲指示灯风格</li>
+<li><strong>扫描线纹理</strong> - 复古CRT显示器的感觉</li>
+<li><strong>几何线条</strong> - 六边形、网格背景装饰</li>
+<li><strong>科幻字体</strong> - Orbitron字体，浓浓的机甲风</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>搭建个人博客不仅是技术的练习，更是表达自我的方式。希望大家都能找到属于自己的风格！</p>
+<p>有什么问题欢迎留言交流~</p>
+
+            </div>
+
+            <!-- 标签 -->
+            
+            <div class="post-footer">
+              <div class="post-tags">
+                <svg class="tags-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                
+                <a href="/tags/Hexo" class="tag-item">Hexo</a>
+                
+                <a href="/tags/博客" class="tag-item">博客</a>
+                
+                <a href="/tags/教程" class="tag-item">教程</a>
+                
+              </div>
+            </div>
+            
+
+            <!-- 文章导航 -->
+            <nav class="post-nav">
+              
+              <a href="/2024/01/14/gundam-design-aesthetics/" class="post-nav-item prev">
+                <div class="nav-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  上一篇
+                </div>
+                <div class="nav-title">高达设计美学：超越时代的科幻典范</div>
+              </a>
+              
+              
+              
+              <div class="post-nav-item empty"></div>
+              
+            </nav>
+
+            <!-- 分享区域 -->
+            <div class="share-section">
+              <div class="share-title">分享到</div>
+              <div class="share-buttons">
+                <button class="share-btn weibo" onclick="shareTo('weibo')">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10.098 20c-4.612 0-8.348-2.727-8.348-6.086 0-1.777.938-3.942 2.507-6.107 1.685-2.331 3.673-3.501 5.543-3.501 1.176 0 2.231.4 3.012 1.138.737.7 1.03 1.607 1.03 2.562 0 1.776-1.39 3.526-3.638 4.59-.42.2-.728.66-.728 1.194 0 .66.432 1.2 1.008 1.2.14 0 .28-.03.41-.07.73-.25 1.59-.42 2.53-.42 1.18 0 2.06.23 2.51.66.24.23.36.55.36.97 0 .93-.85 1.7-1.98 1.7-.48 0-.94-.13-1.38-.38-.42-.24-.58-.49-.58-.9 0-.17.05-.33.14-.49l.17-.28c.08-.13.08-.27 0-.4-.08-.12-.12-.26-.12-.42 0-.38.22-.64.5-.82.4-.24.82-.56 1.28-.94.08-.06.16-.06.24 0 .08.06.08.16 0 .24-.42.34-.8.64-1.14.9-.28.2-.4.5-.4.82 0 .28.14.56.38.76.28.24.6.44.96.64.1.06.16.18.16.28 0 .1-.06.2-.16.28-.24.18-.48.38-.7.6-.16.14-.16.34 0 .5.14.14.34.14.5 0 .02-.02.04-.04.06-.06.5-.48 1.16-.98 1.94-1.42.28-.16.58-.16.86 0 .26.16.4.48.4.8 0 .56-.46 1.06-1.06 1.06h-.06c-.52.06-1.06.2-1.62.4-.1.06-.2.06-.3 0-.1-.06-.14-.16-.14-.28 0-.22.14-.42.34-.56.66-.44 1.22-.98 1.68-1.6.1-.12.1-.3 0-.42-.1-.12-.26-.16-.4-.1-.02.02-.04.04-.06.06-.56.56-1.22 1.02-1.98 1.38-.08.04-.16.04-.24 0-.08-.04-.12-.12-.12-.22 0-.2.16-.4.4-.5.92-.38 1.74-.9 2.44-1.56.14-.12.14-.32 0-.46-.14-.14-.34-.14-.48 0-.62.58-1.34 1.04-2.14 1.36-.04.02-.08.02-.12 0-.04-.02-.08-.04-.1-.08-.02-.04-.02-.1 0-.14.22-.36.34-.76.34-1.18 0-.34-.12-.64-.36-.88-.42-.44-.96-.72-1.52-.86-.12-.04-.22-.12-.22-.26 0-.14.1-.24.24-.24h.06c.86-.06 1.68-.36 2.38-.86.08-.06.2-.06.3 0 .1.06.14.16.14.28 0 .18-.12.36-.3.48-.64.46-1.42.72-2.24.78-.04 0-.08 0-.12-.02-.04-.02-.06-.06-.06-.1-.02-.04-.02-.08 0-.12.22-.46.34-.96.34-1.48 0-.44-.14-.86-.4-1.22-.46-.66-1.1-1.12-1.82-1.38-.12-.04-.18-.16-.18-.3 0-.14.08-.24.2-.28.72-.22 1.36-.6 1.88-1.14.08-.08.08-.2 0-.3-.08-.1-.2-.1-.3-.02-.54.56-1.22 1-1.98 1.28-.02.02-.06.02-.08 0-.02-.02-.04-.04-.04-.06-.02-.02-.02-.06 0-.1.02-.02.02-.04.04-.06l.2-.2c.32-.32.56-.68.7-1.1.06-.12.06-.26 0-.38-.06-.12-.18-.18-.3-.18h-.04c-.5.06-1 .24-1.44.54-.1.06-.2.06-.3 0-.1-.06-.14-.18-.14-.28 0-.26.2-.5.48-.6.78-.28 1.64-.44 2.54-.44 1.06 0 2.08.24 2.98.7.14.08.32.06.44-.06.12-.12.14-.32.04-.46-.76-.92-1.76-1.58-2.88-1.94-.16-.06-.24-.22-.24-.38 0-.22.18-.4.4-.4h.04c1.24-.06 2.46.24 3.52.86.16.1.36.06.48-.1.12-.16.1-.38-.06-.5-.96-.54-2.02-.82-3.1-.82-1.36 0-2.68.34-3.82 1-.1.06-.22.06-.32 0-.1-.06-.14-.16-.14-.28 0-.32.22-.58.5-.68 1.24-.48 2.62-.74 4.02-.74 1.78 0 3.48.44 4.98 1.28.36.22.78.12 1.04-.2.22-.32.16-.76-.14-1.02-1.38-.92-3.02-1.4-4.72-1.4-1.38 0-2.74.28-3.98.84-.14.06-.3 0-.38-.16-.08-.16-.04-.34.12-.44 1.36-.62 2.86-.94 4.4-.94 1.9 0 3.74.46 5.36 1.36.12.06.24.06.36 0 .12-.06.2-.2.2-.34-.04-.18-.12-.28-.28-.36z"/>
+                  </svg>
+                </button>
+                <button class="share-btn twitter" onclick="shareTo('twitter')">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </button>
+                <button class="share-btn copy" onclick="copyLink()">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 返回顶部 -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</main>
+
+<script>
+  // 阅读进度条
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('readingProgress').style.width = scrolled + '%';
+  });
+
+  // 生成目录
+  document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('postContent');
+    const tocList = document.querySelector('.toc-list');
+    if (content && tocList) {
+      const headers = content.querySelectorAll('h1, h2, h3');
+      headers.forEach((header, index) => {
+        header.id = 'heading-' + index;
+        const li = document.createElement('li');
+        li.className = 'toc-item level-' + header.tagName.charAt(1);
+        li.innerHTML = '<a href="#heading-' + index + '">' + header.textContent + '</a>';
+        tocList.appendChild(li);
+      });
+    }
+
+    // 计算阅读时间
+    const text = document.getElementById('postContent').textContent;
+    const words = text.length;
+    const readTime = Math.ceil(words / 500);
+    document.getElementById('readTime').textContent = '预计阅读 ' + readTime + ' 分钟';
+  });
+
+  // 分享功能
+  function shareTo(platform) {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+    let shareUrl = '';
+    if (platform === 'weibo') {
+      shareUrl = 'https://service.weibo.com/share/share.php?url=' + url + '&title=' + title;
+    } else if (platform === 'twitter') {
+      shareUrl = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+    }
+    if (shareUrl) window.open(shareUrl, '_blank');
+  }
+
+  function copyLink() {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      alert('链接已复制到剪贴板！');
+    });
+  }
+
+  // 返回顶部
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // 目录滚动高亮
+  window.addEventListener('scroll', () => {
+    const headers = document.querySelectorAll('#postContent h1, #postContent h2, #postContent h3');
+    let current = '';
+    headers.forEach(header => {
+      const headerTop = header.offsetTop;
+      if (window.scrollY >= headerTop - 100) {
+        current = header.getAttribute('id');
+      }
+    });
+    document.querySelectorAll('.toc-item').forEach(item => {
+      item.classList.remove('active');
+      if (item.querySelector('a').getAttribute('href') === '#' + current) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">机甲之心</div>
+      <div class="footer-social">
+        
+        
+        
+      </div>
+      
+      <!-- 访问统计 -->
+      <div class="site-stats">
+        <span class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv">-</span> 次访问
+          </span>
+        </span>
+        <span class="stat-divider">|</span>
+        <span class="stat-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv">-</span> 位访客
+          </span>
+        </span>
+      </div>
+      
+      <p class="footer-text">
+        © 2024 机甲之心 MEKA CORE<br>
+        由 Hexo 驱动
+      </p>
+    </div>
+  </footer>
+  
+  <!-- 不蒜子统计 -->
+  <script async src="//busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    // Active link highlighting
+    var currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function(link) {
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active');
+      }
+    });
+
+    // Back to top button visibility
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('backToTop');
+      if (btn) {
+        if (window.scrollY > 300) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
