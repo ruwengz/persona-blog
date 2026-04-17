@@ -1,0 +1,43 @@
+# Mecha Theme Configuration - 机甲风格主题
+
+# Site Information
+root: /
+site_name: 机甲之心
+subtitle: MEKA CORE
+description: 探索科技与艺术的边界
+author: MEKA PILOT
+avatar: /images/avatar.png
+
+# Navigation
+menu:
+  首页: /
+  日常: daily
+  专题: topics
+  留言: message
+  关于: about
+
+# Social Links
+social:
+  GitHub: https://github.com/yourname
+  Twitter: https://twitter.com/yourname
+  Email: yourname@email.com
+
+# Color Scheme (机甲风格配色)
+colors:
+  primary: "#0a192f"
+  secondary: "#1a1a2e"
+  accent: "#00ff88"
+  accent2: "#ff0055"
+  text: "#e6f1ff"
+  text_secondary: "#8892b0"
+
+# Effects
+effects:
+  scanlines: true
+  particles: true
+  neon_glow: true
+
+# Footer
+footer:
+  copyright: "© 2024 机甲之心 MEKA CORE"
+  powered: "由 Hexo 驱动"

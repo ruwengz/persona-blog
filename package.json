@@ -1,0 +1,33 @@
+{
+  "name": "meka-core-blog",
+  "version": "1.0.0",
+  "description": "机甲风格个人博客 - 机甲之心",
+  "main": "index.js",
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "scripts": {
+    "server": "hexo server",
+    "generate": "hexo generate",
+    "deploy": "hexo deploy",
+    "clean": "hexo clean"
+  },
+  "keywords": [
+    "hexo",
+    "blog",
+    "mecha",
+    "机甲"
+  ],
+  "author": "MEKA PILOT",
+  "license": "MIT",
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-cli": "^4.3.2",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-searchdb": "^1.5.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-word-counter": "^0.2.2"
+  }
+}

@@ -1,0 +1,53 @@
+<!-- Message Board Page - 留言板 -->
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">留言板</h1>
+    <p class="page-subtitle">有任何想说的，都可以在此留下你的足迹</p>
+  </div>
+</section>
+
+<section class="message-board">
+  <!-- Message Form -->
+  <div class="message-form">
+    <h3 style="font-family: var(--font-title); color: var(--accent); margin-bottom: 20px; letter-spacing: 1px;">
+      留下你的足迹
+    </h3>
+    <form id="messageForm">
+      <input type="text" name="name" placeholder="你的昵称" required>
+      <input type="email" name="email" placeholder="邮箱 (不会被公开)">
+      <textarea name="message" placeholder="写下你的留言..." required></textarea>
+      <button type="submit" class="btn" style="width: 100%;">发送留言</button>
+    </form>
+  </div>
+
+  <!-- Message List -->
+  <div class="message-list" id="messageList">
+    <!-- 示例留言 -->
+    <div class="message-item">
+      <div class="message-author">Visitor</div>
+      <div class="message-content">这个机甲风格的主题太酷了！希望能看到更多关于机甲设计的文章。</div>
+      <div class="message-time">2024-01-15 14:30</div>
+    </div>
+
+    <div class="message-item">
+      <div class="message-author">TechFan</div>
+      <div class="message-content">网站设计很有未来感，配色也很舒服。期待更多精彩内容！</div>
+      <div class="message-time">2024-01-14 09:20</div>
+    </div>
+
+    <div class="message-item">
+      <div class="message-author">Pilot_007</div>
+      <div class="message-content">作为一个高达迷，这个网站简直是梦想中的样子。继续保持！</div>
+      <div class="message-time">2024-01-13 21:45</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Simple message form handling (for demo purposes)
+  document.getElementById('messageForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('感谢留言！在实际部署中，你可以接入 Valine、Disqus 等评论系统来保存留言。');
+    this.reset();
+  });
+</script>

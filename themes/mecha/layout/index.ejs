@@ -1,0 +1,55 @@
+<!-- Main Content -->
+<main class="main-content">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title"><%= config.title %></h1>
+      <p class="hero-subtitle"><%= theme.subtitle %></p>
+      <p class="hero-tagline"><%= config.description %></p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="<%= theme.root %>daily/" class="btn">开始探索</a>
+        <a href="<%= theme.root %>about/" class="btn btn-secondary">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <% if (site.posts && site.posts.length) { %>
+  <section class="container">
+    <h2 style="font-family: var(--font-title); color: var(--accent); text-align: center; margin: 40px 0 20px; letter-spacing: 2px;">
+      &lt;最新文章/&gt;
+    </h2>
+    
+    <div class="posts-grid">
+      <% site.posts.each(function(post) { %>
+      <article class="post-card">
+        <h3 class="post-card-title">
+          <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </h3>
+        <div class="post-card-meta">
+          <span class="category"><%= post.category || '日常' %></span>
+          <span><%= date(post.date, 'YYYY-MM-DD') %></span>
+        </div>
+        <% var raw = post.content || ''; %>
+        <% var plain = raw.replace(/<[^>]+>/g, '').substring(0, 100); %>
+        <p class="post-card-excerpt"><%= plain %><% if (plain.length >= 100) { %>...<% } %></p>
+        <div class="post-card-footer">
+          <a href="<%- url_for(post.path) %>" class="read-more">阅读更多 →</a>
+        </div>
+      </article>
+      <% }); %>
+    </div>
+
+    <% if (page.total > 1) { %>
+    <nav class="pagination">
+      <% if (page.prev) { %>
+      <a href="<%- url_for(page.prev_link) %>" class="btn">上一页</a>
+      <% } %>
+      <% if (page.next) { %>
+      <a href="<%- url_for(page.next_link) %>" class="btn">下一页</a>
+      <% } %>
+    </nav>
+    <% } %>
+  </section>
+  <% } %>
+</main>
