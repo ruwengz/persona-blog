@@ -11,7 +11,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 url: https://ruwengz.github.io/persona-blog
-root: /
+root: /persona-blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
