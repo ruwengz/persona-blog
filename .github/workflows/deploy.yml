@@ -36,8 +36,8 @@ jobs:
         
     - name: Configure Git
       run: |
-        git config --global user.email "github-actions@github.com"
-        git config --global user.name "GitHub Actions"
+        git config --global user.email "13041936923@163.com"
+        git config --global user.name "zxx"
         
     - name: Build website
       run: |
@@ -45,7 +45,7 @@ jobs:
         npx hexo generate
         
     - name: Deploy to GitHub Pages
-      run: |
-        npx hexo deploy
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public

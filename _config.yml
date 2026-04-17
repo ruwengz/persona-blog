@@ -74,9 +74,10 @@ theme: mecha
 
 # Deployment
 deploy:
-  type: git
-  repo: https://github.com/ruwengz/persona-blog.git
-  branch: gh-pages
+  type: ''
+  # type: git
+  # repo: https://github.com/ruwengz/persona-blog.git
+  # branch: gh-pages
 
 # Search
 search:
