@@ -10,8 +10,8 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-url: https://yourdomain.com
-root: /
+url: https://ruwengz.github.io
+root: /persona-blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
